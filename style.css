@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+
 :root {
     --clr-primary: #9a3300;
     --clr-active: #ff5500;
+    --clr-background: rgba(11, 11, 11, 0.898);
 }
 
 html,
@@ -82,6 +89,8 @@ video {
 
 body {
     line-height: 1;
+    font-family: "Segoe UI";
+    background-color: #ffa507;
 }
 
 h1 {
@@ -190,8 +199,9 @@ select {
 
 .window {
     position: absolute;
-    border: 3px solid #8532ff;
-    background: #686868;
+    border: 3px solid #000000;
+    color: white;
+    background: var(--clr-background);
     border-radius: 5px;
     z-index: 1000;
 }
@@ -540,11 +550,6 @@ video {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
-}
-
-body {
-    line-height: 1;
 }
 
 h1 {
@@ -639,24 +644,20 @@ select {
 }
 
 #desktop {
-    font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #121212 0%, #702908 100%);
     overflow: hidden;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.window {
-    position: absolute;
-    border: 3px solid var(--clr-primary);
-    background: #686868;
-    border-radius: 5px;
-    z-index: 1000;
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0) 0%, black),
+        url('mainlogo.png') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .window.closed {
@@ -1128,6 +1129,7 @@ a {
 .invitetext {
     text-align: center;
     margin-block: 1em;
+    font-size: large;
 }
 
 .window-container {
@@ -1143,4 +1145,9 @@ a {
     height: 100%;
     /* min-width: 50vw;
     min-height: 50vh; */
+}
+
+.safteytor {
+    margin-inline: auto;
+    width: 50px;
 }
