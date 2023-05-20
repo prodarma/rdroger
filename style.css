@@ -287,8 +287,8 @@ select {
 }
 
 #window3 {
-    top: 125px;
-    left: 420px;
+    top: 80px;
+    left: 830px;
 }
 
 #window4 {
@@ -317,8 +317,8 @@ select {
 }
 
 #window3 .wincontent {
-    width: 400px;
-    height: 350px;
+    width: 650px;
+    height: 650px;
 }
 
 #window4 .wincontent {
