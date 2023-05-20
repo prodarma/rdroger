@@ -134,14 +134,6 @@ q:after {
     content: none;
 }
 
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
 ins {
     background-color: #ff9;
     color: #000;
@@ -184,19 +176,6 @@ select {
     vertical-align: middle;
 }
 
-#desktop {
-    font-family: font-family: 'Segoe UI';
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #4e4e4e;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .window {
     position: absolute;
     border: 3px solid #000000;
@@ -226,34 +205,11 @@ select {
     display: none;
 }
 
-.windowHeader {
-    background-color: var(--clr-primary);
-    text-align: right;
-    border-bottom: 2px solid #000000;
-    padding: 2px;
-    cursor: move;
-    height: 28px;
-}
 
 .activeWindow .windowHeader {
     background-color: var(--clr-active);
 }
 
-.windowHeader>span {
-    display: inline-block;
-    cursor: pointer;
-    border: 2px solid #000;
-    margin-left: 4px;
-    font-size: 19px;
-    padding: 2px 10px;
-    font-family: 'Segoe UI';
-    border-radius: 5px;
-    line-height: 20px;
-    width: 12px;
-    height: 20px;
-    position: relative;
-    overflow: hidden;
-}
 
 .windowHeader>span:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -261,15 +217,6 @@ select {
 
 .windowHeader>span.winclose:hover {
     background: #f21212;
-}
-
-.windowHeader>span>span {
-    display: inline-block;
-    height: 8px;
-    width: 10px;
-    position: absolute;
-    top: 6px;
-    left: 10px;
 }
 
 .winminimize>span {
@@ -295,19 +242,6 @@ select {
     left: 12px;
 }
 
-.wincontent {
-    padding: 10px;
-    min-width: 450px;
-    border: 2px solid #000;
-    margin: 2px;
-    border-radius: 0 0 5px 5px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .windowHeader>strong {
     float: left;
     margin: 0px 3px 0 10px;
@@ -315,25 +249,8 @@ select {
     font-size: 17px;
 }
 
-.taskbarPanel {
-    display: inline-block;
-    border: 2px solid #2e2a2aaa;
-    border-radius: 5px;
-    line-height: 24px;
-    margin: 2px 0 0 10px;
-    font-size: 17px;
-    padding: 0 10px;
-    background: #9d887075;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .taskbarPanel.activeTab {
     background: #463e5254;
-}
-
-.taskbarPanel.minimizedTab {
-    background: #aaa;
 }
 
 .taskbarPanel.minimizedTab:hover {
@@ -344,16 +261,6 @@ select {
     display: none;
 }
 
-#taskbar {
-    position: absolute;
-    height: 32px;
-    border-top: 2px solid #bcbcbc;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #6e6e6e;
-}
-
 #icons {
     position: absolute;
     z-index: 10;
@@ -361,25 +268,17 @@ select {
     left: 20px;
 }
 
-#templateLink {
-    position: absolute;
-    display: inline-block;
-    bottom: 10px;
-    right: 20px;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
-}
+/*desktop styles BEGIN*/
 
-/*Demo styles BEGIN*/
 #window0 {
     top: 20px;
-    left: 240px;
+    left: 120px;
 }
 
+
 #window1 {
-    top: 400px;
-    left: 120px;
+    top: 520px;
+    left: 180px;
 }
 
 #window2 {
@@ -390,6 +289,16 @@ select {
 #window3 {
     top: 125px;
     left: 420px;
+}
+
+#window4 {
+    top: 825px;
+    left: 420px;
+}
+
+#window5 {
+    top: 225px;
+    left: 520px;
 }
 
 #window0 .wincontent {
@@ -473,108 +382,6 @@ select {
         width: auto;
         height: 300px;
     }
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.3em;
-    margin-bottom: 10px;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
 }
 
 nav ul {
@@ -752,6 +559,11 @@ select {
     border: 2px solid #000;
     margin: 2px;
     border-radius: 0 0 5px 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .windowHeader>strong {
@@ -784,10 +596,6 @@ select {
 
 .taskbarPanel.minimizedTab:hover {
     background: var(--clr-primary);
-}
-
-.taskbarPanel.closed {
-    display: none;
 }
 
 #taskbar {
@@ -857,47 +665,6 @@ select {
 .contact-submit-btn:hover {
     cursor: pointer;
     background-color: var(--clr-primary);
-}
-
-/*Demo styles BEGIN*/
-#window0 {
-    top: 20px;
-    left: 240px;
-}
-
-#window1 {
-    top: 400px;
-    left: 120px;
-}
-
-#window2 {
-    top: 250px;
-    left: 300px;
-}
-
-#window3 {
-    top: 125px;
-    left: 420px;
-}
-
-#window0 .wincontent {
-    width: 660px;
-    height: 400px;
-}
-
-#window1 .wincontent {
-    width: 500px;
-    height: 300px;
-}
-
-#window2 .wincontent {
-    width: 400px;
-    height: 350px;
-}
-
-#window3 .wincontent {
-    width: 400px;
-    height: 350px;
 }
 
 @media screen and (max-width: 960px) {
