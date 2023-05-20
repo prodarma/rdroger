@@ -918,3 +918,19 @@ a {
     margin-inline: auto;
     width: 50px;
 }
+
+table,
+th,
+td {
+    border: 1px solid rgb(79, 79, 79);
+}
+
+th,
+td {
+    width: 100%;
+    text-align: center
+}
+
+tr {
+    display: flex;
+}

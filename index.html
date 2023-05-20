@@ -9,8 +9,11 @@
 	<link rel="canonical" href="https://html5-templates.com/">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script> -->
 	<script src="script.js"></script>
 	<script defer src="loader.js"></script>
+	<script type="module" src="drugSearch.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>r/droger Home</title>
 </head>
@@ -93,14 +96,87 @@
 			</div>
 		</div>
 		<div class="window closed embed-window" data-title="Luffarn">
-
 			<iframe class="iframe" src="https://luffarn.com" title="luffarn"></iframe>
-
 		</div>
 		<div class="window closed embed-window" data-title="Psychonaut Wiki">
-
 			<iframe class="iframe" src="https://psychonautwiki.org/wiki/Main_Page" title="Psychonaut"></iframe>
+		</div>
+		<div class="window closed embed-window" data-title="Psychonaut Wiki">
+			<div class="window-container">
+				<input class="drug-search-input" type="text" /><button class="drug-query-btn" type="submit">Search</button>
+				<!-- <table>
+					<tr>
+						<th class="drug-table-title">LSD</th>
+					</tr>
+					<tr>
+						<th>Bioavailability</th>
+						<td class="bioavailability-unit">71% - 71%</td>
+					</tr>
+					<tr>
+						<th>Dosages</th>
+					</tr>
+					<tr>
+						<th>Threshold</th>
+						<td class="threshold-unit">15µg</td>
+					</tr>
+					<tr>
+						<th>Light</th>
+						<td class="light-unit">15 - 75µg</td>
+					</tr>
+					<tr>
+						<th>Common</th>
+						<td class="common-unit"">75 - 150µg</td>
+					</tr>
+					<tr>
+						<th>Strong</th>
+						<td class=" strong-unit">150 - 300µg</td>
+					</tr>
+					<tr>
+						<th>Heavy</th>
+						<td class="heavy-unit">300µg+</td>
+					</tr>
+					<tr>
+						<th>Duration</th>
+					</tr>
+					<tr>
+						<th>Total</th>
+						<td class="total-unit">8 - 12 hours</td>
+					</tr>
+					<tr>
+						<th>Onset</th>
+						<td class="onset-unit">15 - 30 min</td>
+					</tr>
+					<tr>
+						<th>Come up</th>
+						<td class="comeup-unit">45 - 90 min</td>
+					</tr>
+					<tr>
+						<th>Peak</th>
+						<td class="peak-unit">3 - 5 hours</td>
+					</tr>
+					<tr>
+						<th>Offset</th>
+						<td class="offset-unit">3 - 5 hours</td>
+					</tr>
+					<tr>
+						<th>After effects</th>
+						<td class="after-unit"">12 - 48 hours</td>
+					</tr>
 
+					<tr>
+						<th>Routes of administrations</th>
+					</tr>
+					<tr>
+						<td>Sublingual</td>
+					</tr>
+					<tr>
+						<td>Place tab or a drop under your tongue and let sit.</td< /tr>
+				</table> -->
+				<h1>under construction</h1>
+				<div class=" drug-display">
+					<div id="dataContainer"></div>
+				</div>
+			</div>
 		</div>
 		<br>
 		<div id="taskbar"></div>
@@ -128,6 +204,10 @@
 			<a class="desktop-icon openWindow" data-id="5">
 				<img class="icon-image" src="https://cdn.discordapp.com/attachments/776647770248445974/1109255379025670164/image_3.png" />
 				<span class="icon-title">Psychonaut</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="6">
+				<img class="icon-image" src="https://cdn.discordapp.com/attachments/776647770248445974/1109255379025670164/image_3.png" />
+				<span class="icon-title">Drug Calculator</span>
 			</a>
 
 		</div>
