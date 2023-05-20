@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	<script defer src="loader.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>r/droger Home</title>
+</head>
+
+<body>
+
+	<div class="loader">
+		<div class="slidertitle">
+			Insert password:
+		</div>
+		<div class="typing-slider">
+			<p class="loaderpassword">************</p>
+		</div>
+	</div>
+	<div id="desktop">
+		<div class="window" data-title="Welcome">
+			<div class="window-container">
+				<h2>Welcome to r/drogers unofficial website where you will find information about literally anything, similar to <a href="luffarn.com">Luffarn</a> and <a href="psychonautwiki.org">Psychonaut Wiki.</a></h2>
+				<br>
+				<br>
+				<p>A lot of the facts and information will of course be carefully looked into before publishing to this website.
+					<br>
+					<br>
+				<p>Before the overhaul from Pharmabot to the r/droger forum we used to make bots for discord with admin commands/voice chat creator, music, etc. And we will no longer be working on the bots, unless you have discord.js v14 eslint knowledge then please click the contact page.</p>
+				<br>
+				<br>
+				<p style="font-size: 20px">Currently we are working on finishing the website with all the information you could possibly need when it comes to substances, dosage, etc.</p>
+				<br>
+				<br>
+				<br>
+				<h1>INCASE OF ANY EMERGENCY PLEASE CALL 911 OR 112 FOR SWEDES, BE CAREFUL.</h1>
+
+			</div>
+		</div>
+		<div class="window closed" data-title="Bängel">
+			<div class="window-container">
+				<h1>I am not resposible if anything happens to you or someone you know when attempting to consume any illegal substances,</h1>
+				<p>Pharmabot will include dosebot features with all credits going to the creator for his contributions.</p>Dosebot provides all information regarding dosages, risk cases, etc. If not every drug but most if not all drugs and seems to fit in on here because there's quite a large drugscene where i'm from.<br>
+				<p>At r/droger you will get countless of meatheads who got the right knowledge when it comes to drug safety.</p>
+				<p>Our only goal is for you to be safe and have fun!</p>
+			</div>
+		</div>
+		<div class="window closed" data-title="Kontakt">
+			<div class="window-container">
+				<h2 class="contact-title">Contact me</h2>
+				<h1 class="contactinfo">Kontakta INTE oss vid råd om någon droganvändning!</h1>
+				<p class="contactinfo">Men kontakta gärna oss om ni har allmänna frågor.</p>
+				<p class="smalltextinfo">*Allting är anonymt och all data raderas efter mailet blivit läst.*</p>
+				<form class="contact-form" action="https://formsubmit.co/60456ff4ca932b0cc93a14334d03133f " method="POST">
+
+					<!-- Honeypot -->
+					<input type="text" name="_honey" style="display: none" />
+					<!-- Disable captcha -->
+					<input type="hidden" name="_captcha" value="false" />
+
+					<input id="name" type="text" class="form-input" name="Name" placeholder="anon" required />
+
+					<input id="email" type="email" class="form-input" name="Email" placeholder="anon@anon.com" required />
+					<textarea id="message" class="form-input text-area" name="Message" placeholder="Message" required></textarea>
+					<button id="submit-btn" type="submit" class="contact-submit-btn">Send</button>
+				</form>
+			</div>
+		</div>
+		<div class="window closed" data-title="Your safety">
+			<div class="window-container">
+				<h1 class="redditborder">r/Droger Reddit</h1>
+				<div class="divider-line"></div>
+				<a href=" https://www.reddit.com/r/droger/" target="_blank" class="redditlogo" target="_blank">
+					<img src="logo.png" alt="r/Droger logo" class="logo">
+				</a>
+				<p class="invitetext">Join us at r/droger, where we foster a friendly and inclusive environment that encourages responsible drug use and promotes personal safety. Together, let's make a positive difference in the lives of individuals seeking reliable information about drug ingestion.</p>
+				<div class="divider-line"></div>
+				<div class="safetyimages">
+					<a target="_blank" href="https://psychonautwiki.org/wiki/Main_Page">
+						<div class="psychoeye-div"><img lass="safetyimages" src="https://cdn.discordapp.com/attachments/776647770248445974/1109255379025670164/image_3.png" class="psychoeye" /><span>Psychonaut Wiki</span></div>
+						<a target="_blank" href="https://luffarn.com"><img lass="safetyimages" src="https://www.luffarn.com/wp-content/uploads/2011/12/luffarn-text.png" class="luffarn" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="window closed embed-window" data-title="Luffarn">
+
+			<iframe class="iframe" src="https://luffarn.com" title="luffarn"></iframe>
+
+		</div>
+		<div class="window closed embed-window" data-title="Psychonaut Wiki">
+
+			<iframe class="iframe" src="https://psychonautwiki.org/wiki/Main_Page" title="Psychonaut"></iframe>
+
+		</div>
+		<br>
+		<div id="taskbar"></div>
+		<div id="icons">
+			<a class="desktop-icon openWindow" data-id="0">
+				<img class="icon-image" src="https://winaero.com/blog/wp-content/uploads/2018/11/folder-icon-big-256.png" />
+				<span class="icon-title">Welcome</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="3">
+				<img class="icon-image" src="https://cdn.discordapp.com/attachments/776647770248445974/1109253882963574804/image_2.png" />
+				<span class="icon-title">Safety</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="2">
+				<img class="icon-image" src="https://cdn.discordapp.com/attachments/776647770248445974/1108823361682935920/folder-icon-big-256.png" />
+				<span class="icon-title">Contact</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="1">
+				<img class="icon-image" src="./Recycle_Bin_Windows_11_empty (2).png" />
+				<span class="icon-title">Bängel</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="4">
+				<img class="icon-image" src="./luffarnpng.png" />
+				<span class="icon-title">Luffarn</span>
+			</a>
+			<a class="desktop-icon openWindow" data-id="5">
+				<img class="icon-image" src="https://cdn.discordapp.com/attachments/776647770248445974/1109255379025670164/image_3.png" />
+				<span class="icon-title">Psychonaut</span>
+			</a>
+
+		</div>
+		<a href="./index.html" target="_blank" id="templateLink">© Copyright Pharmabot</a>
+	</div>
+</body>
+
+</html>
