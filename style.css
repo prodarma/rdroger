@@ -272,7 +272,7 @@ select {
 
 #window0 {
     top: 20px;
-    left: 120px;
+    left: 700px;
 }
 
 
@@ -299,6 +299,11 @@ select {
 #window5 {
     top: 225px;
     left: 520px;
+}
+
+#window6 {
+    top: 20px;
+    left: 250px;
 }
 
 #window0 .wincontent {
@@ -332,6 +337,12 @@ select {
     height: 50vh;
     overflow: hidden;
 }
+
+/* #window6 .wincontent {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+} */
 
 @media screen and (max-width: 960px) {
     #window0 {
@@ -919,18 +930,22 @@ a {
     width: 50px;
 }
 
-table,
-th,
-td {
+.table,
+.table-header,
+.table-data {
     border: 1px solid rgb(79, 79, 79);
 }
 
-th,
-td {
+.table-header,
+.table-data {
     width: 100%;
     text-align: center
 }
 
-tr {
+.table-row {
     display: flex;
 }
+/* 
+.dropdown{
+    display: none;
+} */

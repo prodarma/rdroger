@@ -46,7 +46,7 @@ function openWindow(id) {
 		$("#minimPanel" + id).removeClass("closed");
 	}
 }
-function closeWindwow(id) {
+function closeWindow(id) {
 	$("#window" + id).addClass("closed");
 	$("#minimPanel" + id).addClass("closed");
 }
@@ -90,7 +90,7 @@ $(document).ready(function () {
 	});
 
 	$(".winclose").click(function () {		// close window
-		minimizeWindow($(this).parent().parent().attr("data-id"));
+		closeWindow($(this).parent().parent().attr("data-id"));
 	});
 
 	$(".winminimize").click(function () {		// minimize window
