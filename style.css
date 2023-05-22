@@ -945,7 +945,7 @@ a {
 .table-row {
     display: flex;
 }
-/* 
+
 .dropdown{
-    display: none;
-} */
+    display: no;
+}
